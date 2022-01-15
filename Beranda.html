@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>HomeLine - Home</title>
+        <meta name="Description" content="This Website Provides You the Benefits of Booking Homestay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="Homestay,Booking Homestay">
+        <meta name="author" content="ZADHITA">
+        <link href='https://fonts.googleapis.com/css?family=Libre Barcode 39' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/beranda.css">
+        <link rel="icon" href="image/Logo/logo atas.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="js/beranda.js"></script>
+    </Head>
+    
+    <body>
+        <div class="header">
+            <a href="Beranda.html"><img id="Logo" src="image/Homeline.svg" alt="Logo" width="370" height="45"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Fasilitas</a>
+                    <div class="dropdown-content">
+                        <a href="datadeluxe.html">Type Deluxe</a>
+                        <a href="datastandard.html">Type Standart</a>
+                    </div>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Data Rumah Kosong</a>
+                    <div class="dropdown-content">
+                        <a href="datakamar.html">Type Deluxe</a>
+                        <a href="datakamar1.html">Type Standart</a>
+                    </div>
+                </li>
+                <li><a href="index.html" >Booking</a></li>
+            </ul>
+        </div>
+        <div id="runningtext" class="runningtext">
+            <marquee behavior="scroll" scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();"direction="left">Selamat Datang di Website Kami, Kami Siap Melayani Anda dengan Sepenuh Hati</marquee>
+        </div>
+        <div class="slideshow-container"> 
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="image/bg.svg" style="width: 100%;">
+                <div class="text"><h1>Welcome To HomeLine</h1>
+                    <p>HomeLine adalah penyedia penginapan yang didirikanikan pada tahun 2021 <br> tujuan kami adalah menyediakan rumah-rumah terbaik dan ternyaman dengan harga bersahabat dengan segala fasilitas 
+                    <br> selain itu kami juga sangat mudah untuk dicari dan juga dipesan  </p>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="image/Gedung.jpeg" style="width: 100%;">
+                <div class="text" >Berikut adalah tampak luar dari gedung kami <br> Di desain oleh arsitek ternama di negeri ini <br> dibuat dengan konsep minimalis modern semi tropical</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="image/Gedung 2.jpg" style="width: 100%;">
+                <div class="text">Berikut adalah tampak pelataran dalam gedung <br> dengan konsep yang sama di fungsikan agar pelataran tampak simple, namun masih nampak modern</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="image/Ruang Tamu.jpg" style="width: 100%;">
+                <div class="text"> Berikut adalah tampak ruang tamu yang tersedia masih dengan konsep yang sama <br> Difungsionalkan untuk menerima kunjungan kerabat maupun sahabat para penghuni</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="image/Ruang Tunggu.jpg" style="width: 100%;">
+                <div class="text">Berikut adalah tampak ruang santai yang tersedia, berbeda dengan lainnya ruang santai ini berdesain characteristik dan colorful <br> Di fungsionalkan untuk area para penghuni untuk bersantai dan mengilangkan kejenuhan</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="image/Dapur.jpg" style="width: 100%;"> 
+                <div class="text">Berikut adalah tampak dari dapur bersama <br> Difungsionalkan untuk tempat para penghuni unntuk memasak ataupun berkreasi dalam mennciptakan karya seni makanan</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="image/Parkir.jpg" style="width: 100%;">
+                <div class="text">Berikut adalah tampak lahan parkir yang kami sediakan</div>
+            </div>
+                <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+                <a class="next" onclick="plusSlide(1)">&#10095</a>
+            </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+         var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+         }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+
+        <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  text-align: center ; " >KENAPA MEMILIH KAMI??!!</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <i class="fas fa-wallet"></i>
+                    <p>TERJANGKAU</p>
+                    <P>Harga yang pas untuk rumah berkelas !!</P><br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fas fa-mobile"></i>
+                    <p>TEKNOLOGI</p>
+                    <P>Kemudahan untuk proses booking dan pemilihan tipe rumah secara online</P>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>LOKASI</p>
+                    <P>Lokasi yang aman, nyaman, serta strategis dijangkau kemanapun</P>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fas fa-door-closed"></i>
+                    <p>Fasilitas</p>
+                    <P>Fasilitas lengkap tanpa biaya tambahan</P><br>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">LOKASI KAMII!!!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.275886648387!2d106.82082131525162!3d-6.358325495398901!2m3!1f0!2f
+            0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec219b4ddf87%3A0xb3665a2e6d149793!2sDepok%2C%20Kukusan%2C%20Beji%2C%20Depok%20City%2C%20West%20Java%2016425!5e0!3m2!1s
+            en!2sid!4v1593506018048!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="footer">
+            <footer>
+                <h3><center>Kontak kami</center></h3>
+                <div class="row">
+                    <div class="column">
+                        <div>
+                        <i class="fab fa-whatsapp"></i>
+                        <p class="Barcode">0812 5334 2895</p>
+                        <p>0812 5334 2895</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            <p class="Barcode">(021)5946 2295</p>
+                            <p>(021)5946 2295</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <i class="far fa-envelope"></i>
+                            <p class="Barcode">Zadhita@gmail.com</p>
+                            <p>Zadhita@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                            <p class="Barcode">@HomeLine_Kerenn</p>
+                            <p>@HomeLine_Kerenn</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="Beranda.html"><img id="Logo" src="image/Homeline.svg" alt="Logo" width="370" height="45"></a>
+                    <p>JL.Kukusan, Beji, Depok City, West Java 16425</p>
+                </div>
+                <hr width="100%" color="black">
+                <footer>
+                    <p>Copyright&copy; 2021 HomeLine <br> all right reserved</p>
+				</footer>
+        </div>
+    </body>
+</html>

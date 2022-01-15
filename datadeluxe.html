@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+        <title>Homeline - Fasilitas Deluxe</title>
+        <meta name="Description" content="This Website Provides You the Benefits of Booking Homestay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="Homestay,Booking Homestay">
+        <meta name="author" content="ZADHITA">
+        <link href='https://fonts.googleapis.com/css?family=Libre Barcode 39' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/datadeluxe.css">
+        <link rel="icon" href="image/Logo/logo atas.png">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="js/beranda.js"></script>
+    </Head>
+    
+    <body>
+        <div class="header">
+            <a href="Beranda.html"><img id="Logo" src="image/Homeline.svg" alt="Logo" width="370" height="45"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="Beranda.html">Beranda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Fasilitas</a>
+                    <div class="dropdown-content">
+                        <a href="datadeluxe.html">Type Deluxe</a>
+                        <a href="datastandard.html">Type Standart</a>
+                    </div>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Data Rumah Kosong</a>
+                    <div class="dropdown-content">
+                        <a href="datakamar.html">Type Deluxe</a>
+                        <a href="datakamar1.html">Type Standart</a>
+                    </div>
+                </li>
+                <li><a href="index.html" >Booking</a></li>
+            </ul>
+        </div>
+        <div class="slideshow-container"> 
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="image/rumah/deluxe.png" style="width: 100%;">
+                <div class="text"><a style="color:black;"; href="datakamar.html" class="btn"><h2><strong>Check Kamar Kosong</strong></h2></a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="image/rumah/M1.png" style="width: 100%;">
+                <div class="text"><a style="color:black;"; href="datakamar.html" class="btn"><h2><strong>Check Kamar Kosong</strong></h2></a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="image/rumah/M2.png" style="width: 100%;">
+                <div class="text"><a style="color:black;"; href="datakamar.html" class="btn"><h2><strong>Check Kamar Kosong</strong></h2></a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="image/rumah/M3.png" style="width: 100%;">
+                <div class="text"><a style="color:black;"; href="datakamar.html" class="btn"><h2><strong>Check Kamar Kosong</strong></h2></a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="image/rumah/M4.png" style="width: 100%;">
+                <div class="text"><a style="color:black;"; href="datakamar.html" class="btn"><h2><strong>Check Kamar Kosong</strong></h2></a>
+                </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlide(-1)">&#10094</a>
+            <a class="next" onclick="plusSlide(1)">&#10095</a>
+        </div>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+         var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+         }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+        <div class="footer">
+            <footer>
+                <div style="text-align: center;">
+                    <a href="Beranda.html"><img id="Logo" src="image/Homeline.svg" alt="Logo" width="370" height="45"></a>
+                    <p>JL.Kukusan, Beji, Depok City, West Java 16425</p>
+                </div>
+                <hr width="100%" color="black">
+                <footer>
+                    <p>Copyright&copy; 2021 HomeLine <br> all right reserved</p>
+				</footer>
+        </div>
+    </body>
+</html>
